@@ -1,8 +1,9 @@
 /* General */
-
 .container {
-  width: 1338px;
-  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -57,7 +58,7 @@ button {
   max-height: 100%;
   cursor: pointer;
   margin: 0.5em;
-  margin-right: 12px;
+  margin-right: 20px;
 }
 
 .logo {
@@ -69,12 +70,11 @@ button {
   background-color: #f7f9fa;
   border: 1px solid black;
   border-radius: 26px;
-  width: 1020px;
-  height: 45px;
+  width: 50%;
 }
 
 .search-bar {
-  margin-top: 0.5%;
+  padding: 6px 9px;
 }
 
 .search-icon {
@@ -146,7 +146,9 @@ button {
 .header-1 {
   margin-bottom: 50px;
 }
-
+.header-1 .container {
+  position: relative;
+}
 .info {
   display: flex;
   flex-direction: column;
@@ -154,8 +156,8 @@ button {
   flex-direction: column;
   background: #fff;
   position: absolute;
-  left: 21.2rem;
-  top: 8.4rem;
+  left: 4.2rem;
+  top: 3.4rem;
   box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
 }
 
@@ -170,15 +172,12 @@ button {
   margin-bottom: 10px;
   font-size: 35px;
 }
-
+.banner img {
+  width: 100%;
+}
 /* End Header */
 
 /* Start section-1 */
-
-.section-1 .container {
-  width: 1280px;
-  margin: auto;
-}
 
 .section-1 {
   margin-bottom: 50px;
@@ -197,9 +196,12 @@ button {
 /* End info-1 */
 
 /* Start Items */
-
+section .tems {
+  width: 50px;
+}
 section .items ul {
   display: flex;
+  justify-content: left;
   padding: 0px;
 }
 
@@ -230,10 +232,6 @@ section .items ul li {
 }
 
 /* Start info-2 */
-
-.info-2 {
-  margin: 0px 52px;
-}
 
 .info-2 p {
   line-height: 25px;
@@ -289,10 +287,12 @@ section .items ul li {
 .course-5,
 .course-6,
 .course-7,
-.course-8 {
+.course-8,
+.course-9,
+.course-10 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   width: 240px;
   margin: 25px;
 }
@@ -318,3 +318,121 @@ section .items ul li {
 /* End Python */
 
 /* End section-1 */
+
+/* Start Responsive */
+@media (max-width: 860px) {
+  .navbar ul .search,
+  .navbar ul .lang-icon,
+  .navbar ul .log-in,
+  .navbar ul .sign-up,
+  .navbar ul .shop-icon {
+    display: none;
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+  .navbar .fa-bars {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 790px) {
+  .section-1 .items {
+    white-space: nowrap;
+  }
+  .Dr {
+    display: none;
+  }
+}
+
+@media (min-width: 860px) {
+  .navbar .dashes {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .Aw {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .DS {
+    display: none;
+  }
+}
+
+@media (max-width: 415px) {
+  .JS {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .courses div {
+    display: flex;
+    width: 300px;
+  }
+  .courses div img {
+    width: 500px;
+  }
+  .rate,
+  .courses div h3 {
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+  }
+}
+
+@media (max-width: 1000px) {
+  .info {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    width: 1100px;
+  }
+  .header-1 .container {
+    position: relative;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar .udemy-business,
+  .navbar .Teach-on-udemy {
+    display: none;
+  }
+}
+
+/* Medium */
+@media (min-width: 1300px) {
+  .container {
+    width: 1300px;
+  }
+  .header-1 .container {
+    position: relative;
+  }
+}
+
+@media (max-width: 1400px) {
+  .navbar .categories {
+    display: none;
+  }
+}
+
+/* Large */
+@media (min-width: 1600px) {
+  .container {
+    width: 1600px;
+  }
+  .header-1 .container {
+    position: relative;
+  }
+}
+
+/* End Responsive */
