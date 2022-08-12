@@ -287,9 +287,7 @@ section .items ul li {
 .course-5,
 .course-6,
 .course-7,
-.course-8,
-.course-9,
-.course-10 {
+.course-8 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -426,9 +424,9 @@ section .items ul li {
 }
 
 /* Large */
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .container {
-    width: 1600px;
+    width: 1450px;
   }
   .header-1 .container {
     position: relative;
